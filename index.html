@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hangman Game</title>
+  </head>
+  <center>
+    <body>
+      <header>
+        <h1 class="title">Hangman Game</h1>
+      </header>
+
+      <main>
+        <article class="word-container"></article>
+
+        <article class="canvas-hangman">
+          <canvas id="hangman-canvas" width="400" height="400"></canvas>
+        </article>
+
+        <article class="buttons-container"></article>
+
+        <article class="used-letters">
+          <p>used letters:</p>
+        </article>
+
+        <article class="attempts-remaining">
+          <p>Attempts remaining: 7</p>
+        </article>
+
+        <button id="restart-button">Restart Game</button>
+        <script src="hangman.js"></script>
+      </main>
+    </body>
+  </center>
+</html>
