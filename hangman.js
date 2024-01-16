@@ -41,3 +41,15 @@ const ctx = canvas.getContext("2d");
 let attemptsRemaining = maxAttempts;
 let selectedWord = selectRandomWord(words);
 let gameInProgress = false;
+
+function selectRandomWord(words) {
+  const filteredWords = words.filter((word) => word.length <= 15);
+
+  if (filteredWords.length === 0) {
+    // No words match the filter criteria
+    return "";
+  }
+
+  const randomIndex = Math.floor(Math.random() * filteredWords.length);
+  return filteredWords[randomIndex];
+}
